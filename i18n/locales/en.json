@@ -1,0 +1,121 @@
+{
+  "header": {
+    "title": "Manga Text Remover AI",
+    "guide": "User Guide",
+    "guideTooltip": "Open the user guide",
+    "languageTooltip": "Change language"
+  },
+  "footer": {
+    "poweredBy": "Powered by Google Gemini API. Created for demonstration purposes."
+  },
+  "common": {
+    "startOver": "Start Over",
+    "processImage": "Process Image",
+    "processAnother": "Process Another Image",
+    "downloadImage": "Download Image",
+    "editResult": "Edit This Result",
+    "redraw": "Redraw",
+    "cancel": "Cancel",
+    "close": "Close",
+    "selectArea": "Select Area (1024x1024)",
+    "selectText": "Select Text",
+    "clearTextSelections": "Clear Text Selections",
+    "clearAreaSelections": "Clear Area Selections",
+    "pan": "Pan",
+    "go": "GO",
+    "exitFocus": "Exit Focus"
+  },
+  "uploader": {
+    "title": "Drag & Drop your manga panel here",
+    "or": "or",
+    "browse": "Browse Files",
+    "supports": "Supports PNG, JPG, WEBP",
+    "howItWorks": {
+      "title": "How it works:",
+      "step1": "Upload a manga image with text.",
+      "step2": "Define 1024x1024 processing areas (blue boxes) that cover the text.",
+      "step3": "Use the selection tool to draw boundaries (red lines) around the text you want to remove.",
+      "step4": "Our AI will remove the text only within your selections.",
+      "step5": "Download your clean, text-free manga panel."
+    }
+  },
+  "imageDisplay": {
+    "processedTitle": "Text Removed",
+    "reviewTitle": "Review & Adjust Sections",
+    "reviewDescription": "If a section isn't perfect, you can provide a new prompt and click \"Redraw\" to have the AI try again. The main image will update automatically.",
+    "redrawPromptPlaceholder": "Custom prompt for this redraw (optional)",
+    "lastAttemptFailed": "Last attempt failed.",
+    "editingModeLabel": "1. Editing Mode",
+    "defineAreaFirstTooltip": "You must define a processing area first.",
+    "selectTextTooltip": "Select text to remove",
+    "maskTooltip": "Draw a white mask to cover content",
+    "customPromptLabel": "2. Custom Prompt (Optional)",
+    "customPromptPlaceholder": "Leave empty to use the default prompt.",
+    "processDisabledTooltip": "You must select text AND define a processing area.",
+    "instructions": {
+      "title": "Instructions:",
+      "selectArea": "First, use 'Select Area' mode to click on the image and define one or more 1024x1024 processing areas.",
+      "addMoreAreas": "Continue adding processing areas, or switch to 'Select Text' mode to mark the text inside the blue areas.",
+      "selectText": "Now use 'Select Text' mode to draw boundaries around all text you want removed. You can only draw inside the blue areas.",
+      "requirement": "You must have both area selections and text selections to begin processing."
+    }
+  },
+  "loader": {
+    "processingFailed": "Processing Failed",
+    "redrawPlaceholder": "Custom prompt for redraw...",
+    "doNotClose": "Please do not close this window.",
+    "status": {
+      "processing": "Processing section {{current}} of {{total}}...",
+      "paused": "Processing paused. {{count}} section(s) failed. Redraw them to continue.",
+      "assembling": "All {{total}} sections processed! Assembling the final image..."
+    }
+  },
+  "errors": {
+    "title": "An Error Occurred",
+    "errorPrefix": "Error",
+    "noTextSelected": "At least one text selection area is required.",
+    "noAreaSelected": "At least one 1024x1024 processing area is required.",
+    "failedToPrepare": "Failed to prepare image for processing.",
+    "unknown": "An unknown error occurred.",
+    "stitching": "An error occurred while stitching the final image.",
+    "loadProcessed": "Could not load processed image for further editing.",
+    "selectionOutsideArea": "Error: One or more text selections are outside of any defined 1024x1024 processing area. Please clear selections and redraw them inside the blue areas."
+  },
+  "guide": {
+    "title": "User Guide",
+    "upload": {
+      "title": "⬆️ Uploading an Image",
+      "p1": "Start by dragging and dropping an image file (PNG, JPG, WEBP) into the upload area, or click 'Browse Files' to select one from your device."
+    },
+    "step1": {
+      "title": "1️⃣ Step 1: Select Processing Area(s)",
+      "p1": "After uploading, you'll be in 'Select Area' mode. Click on your image to place one or more 1024x1024 blue squares. These squares are the only areas that will be sent to the AI for processing.",
+      "p2": "Ensure that all the text you want to remove is completely inside at least one of these blue areas."
+    },
+    "step2": {
+      "title": "2️⃣ Step 2: Select Text",
+      "p1": "Once you have at least one blue area, switch to 'Select Text' mode. Your cursor will turn into a crosshair. Now, draw red outlines around the text you want to remove. You can only draw inside the blue areas you defined.",
+      "p2": "Click to place points and form a closed shape around the text. Click near the starting point to complete a selection."
+    },
+    "prompt": {
+      "title": "📝 Custom Prompt (Optional)",
+      "p1": "For most cases, the default AI prompt works perfectly. If you are an advanced user and want to give the AI specific instructions (e.g., 'fill with a wood grain texture'), you can type them in this box. Otherwise, just leave it empty."
+    },
+    "processing": {
+      "title": "⏳ Processing",
+      "p1": "Click 'Process Image'. The blue areas (tiles) will be sent to the AI one by one. You can watch the progress live. This may take some time depending on the number of areas selected."
+    },
+    "review": {
+      "title": "🔍 Review & Redraw",
+      "p1": "After processing, the final image appears at the top. Below it, you can see each individual processed tile. If a tile isn't perfect, you can type a new prompt and click 'Redraw' to have the AI try again."
+    },
+    "edit": {
+      "title": "🔁 Edit The Result",
+      "p1": "If the overall result is good but you spot some remaining artifacts, click 'Edit This Result'. This will load your processed image back into the editor, allowing you to perform another round of selections and processing to fine-tune the details."
+    },
+    "download": {
+      "title": "⬇️ Download",
+      "p1": "Once you're happy with the result, click the 'Download Image' button to save the final, text-free image to your device."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manga Text Remover</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "ag-psd": "https://esm.sh/ag-psd@28.5.1"
+  }
+}
+</script>
+<style>
+  /* Manga Halftone Background Pattern */
+  body {
+    background-color: #ffffff;
+    background-image: radial-gradient(#94a3b8 1.5px, transparent 1.5px);
+    background-size: 16px 16px;
+    color: #0f172a;
+  }
+
+  /* Custom Manga UI Utilities */
+  .manga-border {
+    border: 3px solid #000;
+  }
+  .manga-shadow {
+    box-shadow: 4px 4px 0px 0px #000;
+  }
+  .manga-shadow-lg {
+    box-shadow: 8px 8px 0px 0px #000;
+  }
+  .manga-input:focus {
+    outline: none;
+    box-shadow: 4px 4px 0px 0px #000;
+    transform: translate(-2px, -2px);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+    border-left: 2px solid black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #000000; 
+    border: 2px solid #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333333; 
+  }
+</style>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

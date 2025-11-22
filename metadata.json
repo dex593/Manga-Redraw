@@ -1,0 +1,5 @@
+{
+  "name": "Manga Text Remover",
+  "description": "An AI-powered tool to seamlessly remove text from manga panels, preserving the original artwork's integrity, dimensions, and quality.",
+  "requestFramePermissions": []
+}

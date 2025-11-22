@@ -1,0 +1,121 @@
+{
+  "header": {
+    "title": "AI Xóa Chữ Manga",
+    "guide": "Hướng Dẫn",
+    "guideTooltip": "Mở hướng dẫn sử dụng",
+    "languageTooltip": "Thay đổi ngôn ngữ"
+  },
+  "footer": {
+    "poweredBy": "Ứng dụng sử dụng Google Gemini API."
+  },
+  "common": {
+    "startOver": "Làm Lại",
+    "processImage": "Xử Lý Ảnh",
+    "processAnother": "Xử Lý Ảnh Khác",
+    "downloadImage": "Tải Xuống Ảnh",
+    "editResult": "Chỉnh Sửa Kết Quả Này",
+    "redraw": "Xử lý lại",
+    "cancel": "Hủy",
+    "close": "Đóng",
+    "selectArea": "Chọn Vùng Xử Lý (1024x1024)",
+    "selectText": "Khoanh Vùng Chữ",
+    "clearTextSelections": "Xóa Vùng Chữ Đã Khoanh",
+    "clearAreaSelections": "Xóa Vùng Xử Lý",
+    "pan": "Di chuyển",
+    "go": "Xử lý",
+    "exitFocus": "Thoát vùng {{name}}"
+  },
+  "uploader": {
+    "title": "Kéo & Thả ảnh manga của bạn vào đây",
+    "or": "hoặc",
+    "browse": "Chọn Tệp",
+    "supports": "Hỗ trợ PNG, JPG, WEBP",
+    "howItWorks": {
+      "title": "Cách hoạt động:",
+      "step1": "Tải lên một hình ảnh truyện tranh có chữ.",
+      "step2": "Xác định các vùng xử lý 1024x1024 (hộp màu xanh).",
+      "step3": "Sử dụng công cụ lựa chọn để vẽ ranh giới (đường màu đỏ) xung quanh văn bản bạn muốn xóa.",
+      "step4": "AI của chúng tôi sẽ chỉ xóa văn bản trong vùng bạn chọn.",
+      "step5": "Tải xuống trang truyện đã được làm sạch, không còn chữ."
+    }
+  },
+  "imageDisplay": {
+    "processedTitle": "Đã Xóa Chữ",
+    "reviewTitle": "Xem Lại & Căn Chỉnh Các Vùng",
+    "reviewDescription": "Nếu một vùng nào đó chưa hoàn hảo, bạn có thể cung cấp một prompt mới và nhấp vào \"Xử lý lại\" để AI thử lại. Hình ảnh chính sẽ tự động cập nhật.",
+    "redrawPromptPlaceholder": "Prompt tùy chỉnh để xử lý lại (tùy chọn)",
+    "lastAttemptFailed": "Lần thử cuối thất bại.",
+    "editingModeLabel": "1. Chế Độ Chỉnh Sửa",
+    "defineAreaFirstTooltip": "Bạn phải xác định một vùng xử lý trước.",
+    "selectTextTooltip": "Khoanh vùng chữ muốn xóa",
+    "maskTooltip": "Vẽ một lớp che màu trắng để ẩn nội dung",
+    "customPromptLabel": "2. Prompt Tùy Chỉnh (Tùy chọn)",
+    "customPromptPlaceholder": "Để trống để sử dụng prompt mặc định.",
+    "processDisabledTooltip": "Bạn phải khoanh vùng chữ VÀ xác định một vùng xử lý.",
+    "instructions": {
+      "title": "Hướng dẫn:",
+      "selectArea": "Đầu tiên, dùng chế độ 'Chọn Vùng Xử Lý' để nhấp vào ảnh và xác định một hoặc nhiều vùng 1024x1024.",
+      "addMoreAreas": "Tiếp tục thêm vùng xử lý, hoặc chuyển sang chế độ 'Khoanh Vùng Chữ' để khoanh các vùng văn bản bên trong các vùng màu xanh.",
+      "selectText": "Bây giờ, dùng chế độ 'Khoanh Vùng Chữ' để vẽ ranh giới xung quanh tất cả văn bản bạn muốn xóa. Bạn chỉ có thể vẽ bên trong các vùng màu xanh.",
+      "requirement": "Bạn phải có cả vùng xử lý và vùng chữ đã khoanh để bắt đầu."
+    }
+  },
+  "loader": {
+    "processingFailed": "Xử Lý Thất Bại",
+    "redrawPlaceholder": "Prompt tùy chỉnh để xử lý lại...",
+    "doNotClose": "Vui lòng không đóng cửa sổ này.",
+    "status": {
+      "processing": "Đang xử lý vùng {{current}} trên {{total}}...",
+      "paused": "Đã tạm dừng xử lý. {{count}} vùng bị lỗi. Hãy xử lý lại chúng để tiếp tục.",
+      "assembling": "Đã xử lý tất cả {{total}} vùng! Đang ghép ảnh cuối cùng..."
+    }
+  },
+  "errors": {
+    "title": "Đã Xảy Ra Lỗi",
+    "errorPrefix": "Lỗi",
+    "noTextSelected": "Cần có ít nhất một vùng chữ được khoanh.",
+    "noAreaSelected": "Cần có ít nhất một vùng xử lý 1024x1024px.",
+    "failedToPrepare": "Không thể chuẩn bị ảnh để xử lý.",
+    "unknown": "Đã xảy ra một lỗi không xác định.",
+    "stitching": "Đã xảy ra lỗi khi ghép ảnh cuối cùng.",
+    "loadProcessed": "Không thể tải ảnh đã xử lý để chỉnh sửa thêm.",
+    "selectionOutsideArea": "Lỗi: Một hoặc nhiều vùng chữ nằm ngoài bất kỳ vùng xử lý 1024x1024px nào. Vui lòng xóa và khoanh lại vùng chữ bên trong các ô màu xanh."
+  },
+  "guide": {
+    "title": "Hướng Dẫn Sử Dụng",
+    "upload": {
+      "title": "⬆️ Tải Ảnh Lên",
+      "p1": "Bắt đầu bằng cách kéo và thả một tệp ảnh (PNG, JPG, WEBP) vào khu vực tải lên, hoặc nhấp vào 'Chọn Tệp' để chọn từ thiết bị của bạn."
+    },
+    "step1": {
+      "title": "1️⃣ Bước 1: Chọn (các) Vùng Xử Lý",
+      "p1": "Sau khi tải lên, bạn sẽ ở chế độ 'Chọn Vùng Xử Lý'. Nhấp vào ảnh của bạn để đặt một hoặc nhiều ô vuông màu xanh lam 1024x1024px. Những ô vuông này là các khu vực duy nhất sẽ được gửi đến AI để xử lý.",
+      "p2": "Hãy đảm bảo rằng tất cả văn bản bạn muốn xóa nằm hoàn toàn bên trong ít nhất một trong các vùng màu xanh này."
+    },
+    "step2": {
+      "title": "2️⃣ Bước 2: Khoanh Vùng Chữ",
+      "p1": "Khi bạn có ít nhất một vùng màu xanh, hãy chuyển sang chế độ 'Khoanh Vùng Chữ'. Bây giờ, hãy vẽ các đường viền màu đỏ xung quanh văn bản bạn muốn xóa. Bạn chỉ có thể vẽ bên trong các vùng màu xanh đã xác định.",
+      "p2": "Nhấp chuột để đặt các điểm và tạo thành một hình khép kín xung quanh văn bản."
+    },
+    "prompt": {
+      "title": "📝 Prompt Tùy Chỉnh (Tùy chọn)",
+      "p1": "Trong hầu hết các trường hợp, prompt AI mặc định hoạt động hoàn hảo. Nếu bạn là người dùng nâng cao và muốn dùng prompt phù hợp hơn cho AI, bạn có thể nhập chúng vào ô này. Nếu không, cứ để mặc định."
+    },
+    "processing": {
+      "title": "⏳ Xử Lý",
+      "p1": "Nhấp vào 'Xử Lý Ảnh'. Các vùng màu xanh (tiles) sẽ được gửi đến AI lần lượt. Quá trình này có thể mất một chút thời gian tùy thuộc vào số lượng vùng được chọn."
+    },
+    "review": {
+      "title": "🔍 Xem Lại & Căn Chỉnh",
+      "p1": "Sau khi xử lý, Nếu một thấy chưa hoàn hảo, bạn có thể nhập prompt mới và nhấp 'Xử lý vùng này' ở chỗ Layers để AI thử lại."
+    },
+    "edit": {
+      "title": "🔁 Chỉnh Sửa Kết Quả",
+      "p1": "Nếu kết quả tổng thể tốt nhưng bạn phát hiện ra một số chi tiết còn sót lại, hãy nhấp vào 'Chỉnh Sửa Kết Quả Này'. Thao tác này sẽ tải hình ảnh đã xử lý của bạn trở lại trình chỉnh sửa, cho phép bạn thực hiện một vòng lựa chọn và xử lý khác để tinh chỉnh các chi tiết."
+    },
+    "download": {
+      "title": "⬇️ Tải Xuống",
+      "p1": "Khi bạn đã hài lòng với kết quả, hãy nhấp vào nút 'Tải Xuống Ảnh' để lưu hình ảnh cuối cùng, không còn chữ vào thiết bị của bạn."
+    }
+  }
+}
